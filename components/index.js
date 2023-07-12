@@ -195,6 +195,7 @@ export default class MjMsoButton extends BodyComponent {
     let arcsize = 0
     if (radii > height) arcsize = 100
     if (radii !== 0 && arcsize !== 100) arcsize = (radii / height) * 100
+    arcsize = `${arcsize}%`;
 
     let borderAttr = ['0pt', 'Solid', '#000000']
     const borderstyleAdapter = {
